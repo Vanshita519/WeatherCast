@@ -8,7 +8,7 @@ import io
 
 # Function to fetch weather data
 def get_weather(city):
-    api_key = "eef0a1c4550f45f2a5f64946240908"  # Replace with your actual API key from WeatherAPI
+    api_key = "# Replace with your actual API key from WeatherAPI"  
     base_url = f"http://api.weatherapi.com/v1/forecast.json?key={api_key}&q={city}&days=1&aqi=no&alerts=no"
     response = requests.get(base_url)
     return response.json()
